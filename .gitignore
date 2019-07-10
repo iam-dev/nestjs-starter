@@ -1,0 +1,88 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage
+reports
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# changelog generator config
+.github_changelog_generator
+
+# dotenv environment variables file
+.env
+
+# apidoc
+apidoc/
+apidoc.json
+
+# misc
+npm-debug.log
+package-lock.json
+data/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+dist/*
+!/dist/v4
+!/dist/v5
+
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+.vscode
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Mock API
+/api/node_modules

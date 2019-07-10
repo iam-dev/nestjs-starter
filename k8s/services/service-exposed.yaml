@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ appName }}
+spec:
+  type: LoadBalancer
+  loadBalancerIP: {{ staticIp }}
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: {{ port }}
+  selector:
+    app: {{ appName }}

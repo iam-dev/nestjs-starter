@@ -1,0 +1,17 @@
+version: "2"
+services:
+  app:
+    container_name: nestjs-starter
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.test
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"

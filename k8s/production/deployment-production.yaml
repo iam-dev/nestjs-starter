@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: {{ appName }}-production
+spec:
+  replicas:
+  template:
+    metadata:
+      name: {{ appName }}
+      labels:
+        app: {{ appName }}
+        env: production
+    spec:
+      containers:
+      - name: {{ appName }}
+        image: gcr.io/{{ project }}/{{ appName }}:1.0.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: {{ port }}
