@@ -17,7 +17,5 @@ COPY . .
 
 # Copy config
 COPY .env.development.example .env
-COPY apidoc.json.example apidoc.json
 
 EXPOSE 3000
-# CMD [ "npm", "test" ]
